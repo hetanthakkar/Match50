@@ -1,0 +1,167 @@
+
+                <!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <style>
+      body{
+        background-color:black;
+      }
+      section{
+        background-color:blue;
+      }
+      #first{
+        font-size:50px;
+        color:black;
+        background-color:blue;
+        text-align:center;
+        font-size: 2em font-weight: bolder
+      }
+      #second{
+        font-size:35px;
+        color:red;
+        background-color:#C4CFC0;
+        text-align:center;
+      }
+      #first:hover{
+        background-color:#DEECEB;
+      }
+      #first:hover{
+        background-color:blue;
+      }
+      .blinking{
+      animation:blinkingText 2s infinite;
+      }
+      @keyframes blinkingText{
+      0%{color:#000;}
+      ​49%{color:transparent;}
+      ​50%{color:transparent;}
+      ​99%{color:transparent;}
+      ​100%{color:#000;}
+      }
+      #fourth{
+        margin:50px;
+        position:absolute; left:100px; top:2px;
+      }
+      #txtbox1,#txtbox3,#txtbox4,#textbox6 {
+        font-size: 16pt;
+        height: 32px;
+        width : 300px;
+        margin-left:700px;
+      }
+      #txt{
+        font-size:25px;
+        color:black;
+        color:white;
+      }
+      #txtbox1{
+        margin-top:30px;
+      }
+        #txtbox2{
+          font-size: 18pt;
+          height: 40px;
+          width : 260px;
+          margin-left:698px;
+
+        }
+      #create{
+        margin-left:700px;
+        margin-top:0px;
+        font-size:40px;
+        color:white;
+      }
+      #mybutton:hover,#mybutton1:hover{
+        color:red;
+        background-color:yellow;
+        font-size: 46px;
+        font-family:Bodo
+      }
+      #mybutton{
+        position:relative;
+        left:250px;
+        top:10px;
+        background-color:#50A232;
+        font-size:30px;
+        padding:1%;
+        font-family:Arial;
+        border-radius: 8px;
+      }
+      #list1{
+        width:40px;
+        margin-top:20px;
+      }
+      #list3{
+        width:50px;
+      }
+      #txt,#list1,#list2,#list3,#mybutton,#button1,#button2,#form{
+        margin-left:700px;
+      }
+      @media(max-width:959px)
+      {
+      .blinking{
+         width:100%;
+      }
+      .match{
+        width:100%;
+      }
+      }
+      #shift{
+        position:relative;
+        top:-50px;
+      }
+      #txtbox5{
+        position: relative;
+        font-size: 18pt;
+        height: 40px;
+        width : 300px;
+        left:65px;
+        top:0px;
+      }
+      #mybutton1{
+        background-color:#50A232;
+        position: relative;
+        font-size: 16pt;
+        height: 45px;
+        width : 120px;
+        left:700px;
+        top:20px;
+        border-radius: 8px;
+        font-family:Arial;
+      }
+      #txtbox6{
+        position:relative;
+        left:700px;
+        width:300px;
+        height:30px;
+      }
+      #gen{
+        position:relative;
+        left:700px;
+        color:white;
+      }
+      #login{
+          position:relative;
+          top:80px;
+      }
+      </style>
+    <title>
+        HOMEPAGE OF MATCH50
+    </title>
+    </head>
+          <body>
+            <IMG class="notvisible" STYLE="position:absolute; TOP:180px; LEFT:55px; WIDTH:45%; HEIGHT:60%" SRC="https://i.pinimg.com/originals/18/3b/fb/183bfb8961470846df475ba48e41bbd3.png">
+            <div id="first"><span class="match">THIS IS MATCH50</class></div>
+             <br>
+             <div id="second">
+              <div id="third"><span class="blinking">WE HELP YOU MAKE FRIEND WITH SIMILAR PERSONALITY</span> </div>
+               </div>
+               <div id="login">
+               <form action="{{url_for ('user')}}" method="post">
+               <input type="text" name="lname" placeholder="Name" size="20" id="txtbox2">
+               <input type="password" name="lpassword" placeholder="Password" size="20" id="txtbox5"><br>
+                <br><br><button id="mybutton">Login</button>
+                </form>
+                </div>
+               <br><br>
+          </body>
+</html>

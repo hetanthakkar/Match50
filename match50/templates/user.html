@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+   .homebut{
+     width:300px;
+    font-size:25px;
+    padding:1%;
+    font-family:Arial;
+    border-radius:18px;
+    background-color:#F94A03;
+  }
+  #mybutton1{
+    position: relative;
+    left:85px;
+    top:150px;
+  }
+  #mybutton2{
+    position: relative;
+    left:-210px;
+    top:300px;
+  }
+
+  #mybutton3{
+    position: relative;
+    left:-520px;
+    top:450px;
+  }
+  #mybutton4{
+    position: relative;
+    left:-350px;
+    top:50px;
+    background-color:#F94A03;
+    padding:1%;
+    font-family:Arial;
+    border-radius:18px;
+    width:90px;
+  }
+    #mybutton5{
+      position: relative;
+      left:-300px;
+      top:50px;
+      border-radius:18px;
+      width:90px;
+      padding:1%;
+      background-color:#F94A03;
+    }
+    #match{
+      color:#F94A03;
+      position:relative;
+      left:20px;
+      top:30px;
+    }
+</style>
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>
+        HOME Of MATCH50
+    </title>
+    </head>
+          <body style="background-color:#16161d">
+                <div id="match">MATCH50!<div>
+                <br><h1 style="text-align:center">Hello {{name}} </h1>
+
+               <form action="{{url_for('test')}}">
+                   <button id="mybutton1"  class="homebut">MY PERSONALITY</a></button>
+                   </form>
+  <form action="{{url_for('match')}}">
+                   <button id="mybutton2"  class="homebut">MATCH</a></button>
+                   </form>
+
+          </body>
+</html>

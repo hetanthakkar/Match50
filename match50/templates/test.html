@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  #yes{
+        position:relative;
+        left:695px;
+      }
+      .hscale{
+        position:absolute;
+        left:400px;
+        font-size:30px;
+      }
+      .yscale{
+        position:absolute;
+        left:700px;
+        font-size:30px;
+      }
+  </style>
+<title>multiple-choice quiz form</title>
+</head>
+<body bgcolor=#ffffff>
+<div id="main">  Personality  Test</div><br><br> <div id="yes"> YES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NO</div><br>
+<form method="post" action="{{url_for('submit')}}">
+<P>1. I am seen as “reflective” or “reserved.”
+<BR>
+<input type="radio" name="q1" value="1"><span class="hscale"></class><BR>
+<input type="radio" name="q1" value="-1"><BR>
+  <P>2. I feel comfortable in groups and like working in them.
+<BR>
+<input type="radio" name="q2" value=1><BR>
+<input type="radio" name="q2" value=-1><BR>
+  <P>3. I sometimes jump too quickly into an activity and don’t allow enough time to think it over.<BR>
+<input type="radio" name="q3" value=1><BR>
+<input type="radio" name="q3" value=-1><BR>
+  <P>4.I sometimes spend too much time reflecting and don’t move into action quickly enough.<BR>
+<input type="radio" name="q4" value=1><BR>
+<input type="radio" name="q4" value=-1><BR>
+  <P>5. I have a wide range of friends and know lots of people.<BR>
+<input type="radio" name="q5" value=1><BR>
+<input type="radio" name="q5" value=-1><BR>
+  <P>6.I remember events by what I read “between the lines” about their meaning.<BR>
+<input type="radio" name="q6" value=1><BR>
+<input type="radio" name="q6" value=-1><BR>
+  <P>7. I solve problems by working through facts until I understand the problem<BR>
+<input type="radio" name="q7" value=1><BR>
+<input type="radio" name="q7" value=-1><BR>
+  <P>8. I am pragmatic and look to the “bottom line.<BR>
+<input type="radio" name="q8" value=1><BR>
+<input type="radio" name="q8" value=-1><BR>
+  <P>9. I trust experience first and trust words and symbols less.<BR>
+<input type="radio" name="q9" value=1><BR>
+<input type="radio" name="q9" value=-1><BR>
+  <P>10. I enjoy technical and scientific fields where logic is important.<BR>
+<input type="radio" name="q10" value=1><BR>
+<input type="radio" name="q10" value=-1><BR>
+  <P>11. I notice inconsistencies.<BR>
+<input type="radio" name="q11" value=1><BR>
+<input type="radio" name="q11" value=-1><BR>
+  <P>12. I look for logical explanations or solutions to most everything.<BR>
+<input type="radio" name="q12" value=1><BR>
+<input type="radio" name="q12" value=-1><BR>
+  <P>13. I look for what is important to others and express concern for others.<BR>
+<input type="radio" name="q13" value=1><BR>
+<input type="radio" name="q13" value=-1><BR>
+  <P>14. I make decisions with my heart and want to be compassionate.<BR>
+<input type="radio" name="q14" value=1><BR>
+<input type="radio" name="q14" value=-1><BR>
+  <P>15. I believe telling the truth is more important than being tactful.<BR>
+<input type="radio" name="q15" value=1><BR>
+<input type="radio" name="q15" value=-1><BR>
+  <P>16. I appear to be loose and casual. I like to keep plans to a minimum.<BR>
+<input type="radio" name="q16" value=1><BR>
+<input type="radio" name="q16" value=-1><BR>
+  <P>17. I like to have things decided.<BR>
+<input type="radio" name="q17" value=1><BR>
+<input type="radio" name="q17" value=-1><BR>
+  <P>18. I appear to be task oriented.<BR>
+<input type="radio" name="q18" value=1><BR>
+<input type="radio" name="q18" value=-1><BR>
+  <P>19. I appear to be loose and casual. I like to keep plans to a minimum.<BR>
+<input type="radio" name="q19" value=1><BR>
+<input type="radio" name="q19" value=-1><BR>
+  <P>20. I like to get my work done before playing.<BR>
+<input type="radio" name="q20" value=1><BR>
+<input type="radio" name="q20" value=-1><BR>
+<button id="mybutton1"  name= "answers">SUBMIT</button>
+<br>
+</form>
+</body>
+</html>
+
